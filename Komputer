@@ -1,0 +1,22 @@
+class Komputer {
+  String cekInfo(int ram) { 
+    return "Komputer dengan kapasitas "+ram+" GB RAM"; 
+  }
+}
+ 
+class Laptop extends Komputer {
+   
+  String cekInfo(String pemilik) { 
+    return "Laptop ini milik " + pemilik; 
+  }
+}
+ 
+public class BelajarJava {
+  public static void main(String args[]){
+     
+    Laptop laptopSaya = new Laptop();
+    System.out.println(laptopSaya.cekInfo(16));
+    System.out.println(laptopSaya.cekInfo("Saya"));
+ 
+  }
+}
