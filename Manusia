@@ -1,0 +1,20 @@
+class Manusia {
+   public void Berjalan() {
+       System.out.println("Manusia dapat Berjalan");
+   }
+}
+
+class Bayi extends Manusia {
+   public void Berjalan() {
+      super.Berjalan();   // menjalankan method dari super class
+      System.out.println("Tetapi seorang bayi belum bisa berjalan");
+   }
+}
+
+public class Anak {
+
+   public static void main(String args[]) {
+      Manusia b = new Bayi();   // mereferensi class Hewan namun mengambil object dari Anjing
+      b.Berjalan();   // menjalankan method didalam class Anjing
+   }
+}
