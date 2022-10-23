@@ -1,0 +1,37 @@
+
+abstract class Keluarga {
+ 
+    // Mendeklrasikan class dan method tipe abstract 
+    protected abstract void Status();
+}
+ 
+class Adik extends Keluarga {
+    
+    // Menggunakan method dari kelas induk abstrak
+    @Override
+    protected void Status() {
+        System.out.println("Adik saya belum berkeluarga dan sudah bekerja");
+    }
+ 
+}
+ 
+class Kaka extends Keluarga {
+    // Menggunakan method dari kelas induk abstrak
+    @Override
+    protected void Status() {
+        System.out.println("Kaka saya sudah berkeluarga dan sudah bekerja serta mempunyai dua orang anak ");
+    }
+ 
+}
+ 
+public class Tampil {
+ 
+    public static void main (String[] args) {
+        Keluarga adik = new Adik();
+        adik.Status();
+    
+        Keluarga kaka = new Kaka();
+        kaka.Status();
+    }
+ 
+}
