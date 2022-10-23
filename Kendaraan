@@ -1,0 +1,18 @@
+class Kendaraan {
+  protected String brand = "sepeda";        // Atribut dari class kendaraan
+  public void gerak() {                    // method dari class kendaraan
+    System.out.println("dikayuh");
+  }
+}
+
+public class Tipe extends Kendaraan {
+  private String modelName = "Lipat";    // atribut dari tipe
+  public static void main(String[] args) {
+
+    // Create object
+    Tipe myTipe = new Tipe();
+
+    myTipe.gerak();
+    System.out.println(myTipe.brand + " " + myTipe.modelName);
+  }
+}
